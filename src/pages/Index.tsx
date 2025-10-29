@@ -35,13 +35,16 @@ const Index = () => {
         <div className="container mx-auto px-4 z-20 text-center">
           <div className="mb-12 animate-fade-in-up">
             <div className="relative inline-block mb-8">
-              <div className="w-64 h-64 bg-gradient-to-br from-primary to-secondary rounded-lg animate-pulse-glow mx-auto flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-                <div className="relative z-10 text-6xl space-x-4 animate-float">
-                  <span>❓</span>
-                  <span>❓</span>
-                  <span>❓</span>
-                </div>
+              <div className="relative w-80 h-80 mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary blur-3xl opacity-60 animate-pulse-glow"></div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/e5600823-bd71-4505-8e44-17a6196bebda/files/7721e5b9-871d-49ac-9f88-b70ba6d23ef5.jpg"
+                  alt="Mystery Box"
+                  className="relative z-10 w-full h-full object-contain animate-float"
+                />
+                <div className="absolute top-0 right-0 text-6xl animate-float" style={{ animationDelay: '0.2s' }}>❓</div>
+                <div className="absolute top-10 left-0 text-5xl animate-float" style={{ animationDelay: '0.5s' }}>❓</div>
+                <div className="absolute bottom-10 right-10 text-5xl animate-float" style={{ animationDelay: '0.8s' }}>❓</div>
               </div>
             </div>
             
@@ -130,12 +133,16 @@ const Index = () => {
             
             <div className="order-1 md:order-2 animate-fade-in-up">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl"></div>
-                <img 
-                  src="https://cdn.poehali.dev/projects/e5600823-bd71-4505-8e44-17a6196bebda/files/c27e495b-7d9f-421f-9f71-628c6a663d71.jpg"
-                  alt="Mystery Bike"
-                  className="relative rounded-xl border-2 border-primary/30"
-                />
+                <div className="absolute -inset-4 bg-gradient-to-r from-orange-500/30 to-red-500/30 blur-3xl"></div>
+                <div className="relative">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/e5600823-bd71-4505-8e44-17a6196bebda/files/9aa41590-4c07-4110-805e-391339a48e60.jpg"
+                    alt="Mystery Bike in Autumn"
+                    className="relative rounded-xl border-2 border-secondary/50"
+                  />
+                  <div className="absolute top-2 right-2 text-4xl animate-float">🍂</div>
+                  <div className="absolute bottom-4 left-4 text-3xl animate-float" style={{ animationDelay: '0.5s' }}>🍁</div>
+                </div>
               </div>
             </div>
           </div>
